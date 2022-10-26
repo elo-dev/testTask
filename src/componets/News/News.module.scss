@@ -1,0 +1,21 @@
+.news {
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  &__info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 24px 0;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}

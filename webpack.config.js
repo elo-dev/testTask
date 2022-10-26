@@ -2,6 +2,7 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
+const DoteEnvPlugin = require('dotenv-webpack')
 
 let mode = 'development'
 
@@ -12,6 +13,7 @@ const plugins = [
     filename: 'index.html',
     template: path.resolve(__dirname, 'public/index.html'),
   }),
+  new DoteEnvPlugin(),
 ]
 
 if (process.env.NODE_ENV === 'production') {

@@ -1,0 +1,33 @@
+.address {
+  padding: 24px;
+  margin-top: 32px;
+  box-shadow: 0px 2px 8px 0px #02006140;
+  border-radius: 10px;
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    &:nth-child(odd) {
+      &::after,
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #d7d7d7;
+        margin: 16px 0;
+        height: 1px;
+      }
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
