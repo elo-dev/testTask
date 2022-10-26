@@ -40,7 +40,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.s?css$/,
+        test: /\.s?css$/i,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -48,7 +48,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: {
-                localIdentName: '[path]_[name]_[local]',
+                localIdentName: '[name]_[local]',
               },
             },
           },

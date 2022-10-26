@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+  background-color: #4f27bf;
+  height: 80px;
+  padding: 16px 32px;
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__person {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 24px;
+    line-height: 24px;
+    color: white;
+  }
+}
+
+.person {
+  &__name {
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+  }
+  .person {
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+    &__name {
+      font-size: 16px;
+    }
+  }
+}
